@@ -1,2 +1,2 @@
 # TCIKAVA.MALL
-Website project "CIKAVA.MALL"
+Website project "TCIKAVA.MALL"
