@@ -1,23 +1,4 @@
-.title_ico {
-    height: 14px;
-    width: 14px;
-    text-align: center;
-    vertical-align: middle;
-    
-}
 
-.title_news {
-    font-size: 12px;
-    text-transform: uppercase;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 500;
-    color: #393939;
-}
-
-.title_news::before {
-    content: '// ЦiКАВА.МОЛЛ ';
-    color: #8c8c8c;
-}
 
 .sect_news {
     margin: 0px 20px 0px 20px;

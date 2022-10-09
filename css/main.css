@@ -37,6 +37,12 @@ section {
     top: 130px;
 }
 
+.sect_title1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+}
+
 .title_main {
     font-size: 18px;
     text-transform: uppercase;
@@ -261,6 +267,7 @@ section {
 
 .service {
     background: #e4dfd9;
+    border-radius: 10px;
     flex: 1;
     min-width: 130px;
     display: flex;
@@ -310,11 +317,13 @@ section {
     padding: 20px;
     display: grid;
     grid-template-columns: 3fr 2fr;
+    border-radius: 10px;
 }
 
 .sect_address {
     border: #724263 3px solid;
     padding: 20px;
+    border-radius: 10px;
 }
 
 .sect_t_a_title {

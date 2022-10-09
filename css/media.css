@@ -23,6 +23,10 @@
     .footer_content {
         width: 100%;
     }
+
+    .sect_f-s .block_f-s {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 } 
 
 @media (max-width: 789px) {
@@ -48,6 +52,7 @@
     .sect_content .sect_title {
         top: 105px;
     }
+    
     .header_full  .menu_list {
         font-size: 0.85em;
         margin-left: 15px;
@@ -74,6 +79,10 @@
     .sect_news_block .news_block  {
         grid-template-columns: auto auto 100px;
      }
+
+    .sect_f-s .block_f-s {
+        grid-template-columns: 1fr 1fr;
+    }
 
 }
 
@@ -169,6 +178,9 @@
         padding: 20px 20px 20px 50px;
     }
 
+    .sect_f-s .block_f-s {
+        grid-template-columns: 1fr;
+    }
 
 }
 
