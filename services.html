@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;1,300&display=swap" rel="stylesheet">
     <title>ЦIKAВА.MALL :: Услуги торгового центра</title>
-    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 </head>
 
 <body>
@@ -24,9 +24,7 @@
     <header></header>
 
     <script>
-        $(function () {
-            $('header').load('header.html');
-        });
+            $("header").load("header.html",()=>{console.log("Запрос выполнен")});
     </script>
 
     <main>
@@ -46,9 +44,10 @@
         <section class="sect_bg_3">
             <div class="sect_content">
 
-                <div class="title_f-s_1">лучшие vip услуги</div>
+                <div class="sect_title1">
+                    <div class="title_f-s_2">VIP услуги</div>
+                </div>
                 
-
                 <div class="sect_wrapper3">
 
                     <div class="service serv_border">
@@ -104,10 +103,37 @@
                 <div class="sect_title1 b2">
                     <div class="title_f-s_2">ПАРКОВКА & ДОСТУП</div>
                 </div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur distinctio tempore sequi esse! Eligendi consequatur voluptatem pariatur voluptatibus tenetur, veniam doloremque vitae dignissimos, aut corrupti vel ducimus quas cumque quidem.
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id quas quae, sint nihil explicabo eos nesciunt rerum sapiente praesentium! Dolores ipsa recusandae dolore impedit laboriosam cum voluptate porro, quam quasi.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, quaerat laboriosam consequatur accusantium, asperiores quasi illum perspiciatis quis, incidunt atque aut hic porro! Sit, quam temporibus! Ratione maiores facere molestias.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt hic asperiores labore illum eos nulla mollitia cupiditate? Perferendis tempora adipisci neque numquam iste, facilis eaque beatae dolores provident reprehenderit voluptatibus.
+                
+                <div class="sect_f-s">
+                <div class="block_f-s">
+
+                    <div class="block_f-s_id2">
+                        <div class="block_f-s_img2"><img src="img/ico_taxi.png" alt="" srcset=""></div>
+                        <div class="block_f-s_title2">Такси</div>
+                    </div>
+
+                    <div class="block_f-s_id2">
+                        <div class="block_f-s_img2"><img src="img/ico_car_el.png" alt="" srcset=""></div>
+                        <div class="block_f-s_title2">Зарядка для электромобилей</div>
+                    </div>
+
+                    <div class="block_f-s_id2">
+                        <div class="block_f-s_img2"><img src="img/ico_parking2.png" alt="" srcset=""></div>
+                        <div class="block_f-s_title2">Бесплатный паркинг</div>
+                    </div>
+
+                    <div class="block_f-s_id2">
+                        <div class="block_f-s_img2"><img src="img/ico_disabled.png" alt="" srcset=""></div>
+                        <div class="block_f-s_title2">Парковка для людей с ограниченными возможностями</div>
+                    </div>
+
+                    <div class="block_f-s_id2">
+                        <div class="block_f-s_img2"><img src="img/ico_velo.png" alt="" srcset=""></div>
+                        <div class="block_f-s_title2">Стоянки для велосипедов</div>
+                    </div>
+
+                </div>
+            </div>
 
             </div>
         </section>

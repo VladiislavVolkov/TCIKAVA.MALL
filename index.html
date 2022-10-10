@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/media.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;1,300&display=swap" rel="stylesheet">
-    <title>ЦIKAВА.MALL :: Главная страница</title>
-    <script src="http://code.jquery.com/jquery-3.5.0.js"></script>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/media.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/news.css">
+        <link rel="stylesheet" href="css/food_sh_serv.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;1,300&display=swap" rel="stylesheet">
+        <title>ЦIKAВА.MALL :: Главная страница</title>
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    </head>
 
 <body>                  
 
     <header></header> 
 
     <script>
-        $(function() {
-         $('header').load('header.html');
-        });
-    </script> 
+        $("header").load("header.html",()=>{console.log("Запрос выполнен")});
+    </script>
 
 <!--  <header>
         <div class="header_full border_bottom_solid">
@@ -79,7 +79,6 @@
 
                 <div class="sect_title b1">
                     <div class="title_main">Информация</div>
-                    <!-- <div class="title_add">подробнее</div> -->
                 </div>
 
                 <div class="sect_wrapper wrapper_shadow">
