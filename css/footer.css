@@ -23,15 +23,16 @@ footer {
 
 .footer_t_1 {
     color: rgb(245, 245, 245);
-    font-size: 16px;
-    font-weight: 700;
+    font-size: 14px;
+    font-weight: 500;
     font-family: 'Open Sans', sans-serif;
-   
+    border-bottom: 1px #747474 solid;
+    padding-bottom: 10px;
 }
 
 .footer_t_2, .footer_t_3 {
-    color: rgb(245, 245, 245);
-    font-size: 12px;
+    color: rgb(170, 170, 170);
+    font-size: 11px;
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
 }
@@ -39,7 +40,6 @@ footer {
 .footer_t_2 {
     padding: 17px 0;
 }
-
 
 .footer_right {
     margin:20px;
@@ -51,6 +51,12 @@ footer {
 
 .social {
     margin-left:20px;
+    padding: 7px;
+}
+
+.social:hover {
+    background: #6d6d6d;
+    border-radius: 4px;
 }
 
 .social img {
