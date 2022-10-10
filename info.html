@@ -24,22 +24,30 @@
     <header></header> 
 
     <script>
-         $('header').load('header.html');
-    </script> 
+        $("header").load("header.html",()=>{console.log("Запрос выполнен")});
+    </script>
 
     <main>
 
-        информация
+        <section class="sect_bg_1">
+            <div class="sect_content">
+
+                <div class="sect_title b1">
+                    <div class="title_t"><img src="img/ico_rigth.png" alt="" srcset="" class="title_ico"> информация о ТЦ</div>
+                </div>
+
+                <div class="title_f-s">Информация о ТЦ "ЦiKAВА.МОЛЛ"</div>
+
+            </div>
+        </section>
 
     </main>
 
     <footer></footer> 
 
     <script>
-        $(function() {
-         $('footer').load('footer.html');
-        });
-    </script> 
+        $("footer").load("footer.html",()=>{console.log("Запрос выполнен")});
+    </script>
 
 </body>
 

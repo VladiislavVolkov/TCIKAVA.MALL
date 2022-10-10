@@ -153,9 +153,7 @@
     <footer></footer>
 
     <script>
-        $(function () {
-            $('footer').load('footer.html');
-        });
+        $("footer").load("footer.html",()=>{console.log("Запрос выполнен")});
     </script>
 
 </body>

@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;1,300&display=swap" rel="stylesheet">
     <title>ЦIKAВА.MALL :: Рестораны. Кафе. Фудкорт</title>
-    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 </head>
 
 <body>
@@ -24,9 +24,7 @@
     <header></header>
 
     <script>
-        $(function () {
-            $('header').load('header.html');
-        });
+        $("header").load("header.html",()=>{console.log("Запрос выполнен")});
     </script>
 
     <main>
@@ -132,9 +130,7 @@
     <footer></footer>
 
     <script>
-        $(function () {
-            $('footer').load('footer.html');
-        });
+        $("footer").load("footer.html",()=>{console.log("Запрос выполнен")});
     </script>
 
 </body>

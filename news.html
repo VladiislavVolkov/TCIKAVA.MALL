@@ -24,8 +24,8 @@
     <header></header> 
 
     <script>
-         $('header').load('header.html');
-    </script> 
+        $("header").load("header.html",()=>{console.log("Запрос выполнен")});
+    </script>
 
     <main>
 
@@ -92,8 +92,6 @@
                         </div>
                     </div>
 
-
-
                 </div>
             </div>
         </section>
@@ -103,10 +101,8 @@
     <footer></footer> 
 
     <script>
-        $(function() {
-         $('footer').load('footer.html');
-        });
-    </script> 
+        $("footer").load("footer.html",()=>{console.log("Запрос выполнен")});
+    </script>
 
 </body>
 
