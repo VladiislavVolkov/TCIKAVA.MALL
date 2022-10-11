@@ -1,2 +1,2 @@
-$("header").load("/pages/header.html", () => { console.log("header load for all") });
-$("footer").load("/pages/footer.html", () => { console.log("footer load for all") });
+$("header").load("header.html", () => { console.log("header load") });
+$("footer").load("footer.html", () => { console.log("footer load") });
