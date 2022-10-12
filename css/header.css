@@ -89,6 +89,12 @@ header {
     color: #252525;
 }
 
+.mobile .navlist:hover {
+    background: rgb(245, 245, 245);
+    color: #00a2b8;
+    font-style: bold;
+}
+
 .nav_top_right:hover,
 .l1:hover {
     color: #ffffff;
@@ -138,7 +144,7 @@ header {
     z-index: 2000;
     position: absolute;
     margin-left: -20px;
-    padding: 20px 10px 10px 10px;
+    padding: 20px 0px 10px 10px;
     top: 32px;
     box-shadow: 0px 10px 6px -5px rgba(34, 60, 80, 0.15);
     -webkit-box-shadow: 0px 10px 6px -5px rgba(34, 60, 80, 0.15);
@@ -151,18 +157,32 @@ header {
 
 .navlist_mobile {
     color: #919191;
-    font-size: 12px;
+    font-size: 14px;
     text-transform: uppercase;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     background: #e1e1e1;
     width: 100%;
-    padding: 10px 0 10px 10px;
+    padding: 10px 0 10px 25px;
     height: 100%;
     color: #252525;
+    font-weight: 700;
     margin-bottom: 10px;
+    border-left: #e1e1e1 10px solid;
 }
 
 .navlist_mobile:hover {
     border-left: #00a2b8 10px solid;
     background: #d4d4d4;
+    font-weight: 400;
+}
+
+.navlist_mobile:hover:after {
+    content: ' ';
+    background-image: url('../img/arrow_1.png');
+    background-size: cover;
+    height: 16px;
+    width: 16px;
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: middle;
 }
