@@ -41,13 +41,10 @@
     left: -200%;
 }
 
-.slider__nav:checked:nth-of-type(4)~.slider__inner {
-    left: -300%;
-}
 
 .slider__inner {
     position: absolute;
-    width: 400%;
+    width: 300%;
     -webkit-transition: left ease 0.7s;
     transition: left ease 0.7s;
     display: flex;
