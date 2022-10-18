@@ -178,14 +178,15 @@
         background: url('../img/logo.png') no-repeat left;
         background-size: contain;
     }
-     .nav_top .nav_top_left {
+
+    .nav_top .nav_top_left {
         display: none;
     }
 
     .nav_top .mobile {
         display: flex;
     } 
-
+    
     .sect_content .wrapper_bg_4 {
         min-height: 150px;
      }
@@ -210,7 +211,6 @@
     .sect_f-s .block_f-s {
         grid-template-columns: 1fr;
     }
-
 }
 
 @media (max-width: 370px)  {
