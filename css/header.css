@@ -151,8 +151,75 @@ header {
     -moz-box-shadow: 0px 10px 6px -5px rgba(34, 60, 80, 0.15);
     border-top: #00a2b8 4px solid;
 }
-.show {
-    display: block;
+
+.menu-btn {
+	width: 20px;
+	height: 40px;
+	position: absolute;
+	z-index: 2;
+	overflow: hidden;
+    margin-top: -10px;
+    display: inline;
+}
+
+.menu-btn span {
+	width: 20px;
+	height: 1.5px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #222222;
+	transition: all 0.7s;
+}
+
+.menu-btn span:nth-of-type(2) {
+	top: calc(50% - 5px);
+}
+.menu-btn span:nth-of-type(3) {
+	top: calc(50% + 5px);
+}
+
+.menu-btn.active span:nth-of-type(1) {
+    display: none;
+}
+
+.menu-btn.active span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(45deg);  
+}
+
+.menu-btn.active span:nth-of-type(3) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(-45deg); 
+}
+
+.menu {
+	position: fixed;
+	top: 32px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+    background: #222222ec;
+	transform: translateY(-110%);
+	transition: transform 0.5s; 
+}
+
+@keyframes active {
+    0% {
+        background: none;
+    }    
+    50% {
+        background: none;
+    }
+    100% {
+        background: #222222ec;
+    }
+  }
+
+.menu.active {
+	transform: translateY(0);
+    animation: active 0.6s;
 }
 
 .navlist_mobile {
@@ -162,27 +229,26 @@ header {
     font-family: 'Open Sans', sans-serif;
     background: #e1e1e1;
     width: 100%;
-    padding: 10px 0 10px 25px;
-    height: 100%;
+    padding: 10px 10px 15px 30px;
     color: #252525;
     font-weight: 700;
-    margin-bottom: 10px;
-    border-left: #e1e1e1 10px solid;
+    border-left: #00a2b8  10px solid;
 }
 
 .navlist_mobile:hover {
     border-left: #00a2b8 10px solid;
-    background: #d4d4d4;
+    background: #d5d5d5eb;
     font-weight: 400;
+    border-left: #f3f3f3 10px solid;
 }
 
-.navlist_mobile:hover:after {
-    content: ' ';
-    background-image: url('../img/arrow_1.png');
+.navlist_mobile:hover::before {
+    content: '// ';
+    /* background-image: url('../img/arrow_1.png');
     background-size: cover;
     height: 16px;
     width: 16px;
-    margin-left: 10px;
+    margin-right: 10px;
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: middle; */
 }
