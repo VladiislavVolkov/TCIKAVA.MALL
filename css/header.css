@@ -164,20 +164,20 @@ header {
 
 .menu-btn span {
 	width: 20px;
-	height: 1.5px;
+	height: 2px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	background-color: #222222;
-	transition: all 0.7s;
+	background-color: #5a5a5a;
+	transition: all 0.9s;
 }
 
 .menu-btn span:nth-of-type(2) {
-	top: calc(50% - 5px);
+	top: calc(50% - 6px);
 }
 .menu-btn span:nth-of-type(3) {
-	top: calc(50% + 5px);
+	top: calc(50% + 6px);
 }
 
 .menu-btn.active span:nth-of-type(1) {
@@ -186,12 +186,40 @@ header {
 
 .menu-btn.active span:nth-of-type(2) {
     top: 50%;
-    transform: translate(-50%, 0%) rotate(45deg);  
+    transform: translate(-50%, 0%) rotate(45deg); 
+    background-color: #00a2b8 ; 
 }
 
 .menu-btn.active span:nth-of-type(3) {
     top: 50%;
     transform: translate(-50%, 0%) rotate(-45deg); 
+    background-color: #00a2b8 ; 
+}
+
+@keyframes animactive {
+    0% {
+        background: none;
+    }    
+    70% {
+        background: none;
+    }
+    100% {
+        background: #222222ec;
+    }
+}
+
+@keyframes animactiveoff {
+    0% {
+        background: #222222ec;
+        transform: translateX(0%);
+    }    
+    50% {
+        background: #22222230;
+    }
+    100% {
+        background: none;
+        transform: translateX(-110%);
+    }
 }
 
 .menu {
@@ -201,25 +229,17 @@ header {
 	width: 100%;
 	height: 100%;
     background: #222222ec;
+    animation: animactiveoff;
+    animation-duration: 0.8s;
 	transform: translateY(-110%);
-	transition: transform 0.5s; 
-}
+	transition: transform 0.8s; 
 
-@keyframes active {
-    0% {
-        background: none;
-    }    
-    50% {
-        background: none;
-    }
-    100% {
-        background: #222222ec;
-    }
-  }
+}
 
 .menu.active {
 	transform: translateY(0);
-    animation: active 0.6s;
+    animation: animactive;
+    animation-duration: 0.6s;
 }
 
 .navlist_mobile {
@@ -244,11 +264,4 @@ header {
 
 .navlist_mobile:hover::before {
     content: '// ';
-    /* background-image: url('../img/arrow_1.png');
-    background-size: cover;
-    height: 16px;
-    width: 16px;
-    margin-right: 10px;
-    display: inline-block;
-    vertical-align: middle; */
 }
